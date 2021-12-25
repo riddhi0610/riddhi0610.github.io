@@ -406,7 +406,7 @@
     padding: 20px 20px;
     border: none;
     outline: none;
-    border-radius: 100px;
+    border-radius: 0px;
     background: #a4e2e1;
     position: absolute;
     top: 20px;
@@ -426,10 +426,10 @@
 
 #main__img {
     position: absolute;
-    left: 2px;
-    top: 3px;
-    height: 90%;
-    width: 90%;
+    left: 4px;
+    top: 4px;
+    height: 80%;
+    width: 80%;
 }
 
 .services__card:hover {
@@ -497,6 +497,7 @@
 .website__rights {
     color: #A4A4A4;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
 }
 
 @media screen and (max-width: 820px) {
@@ -519,7 +520,7 @@
     .social__media--wrap {
         flex-direction: column;
     }
-
+}
 
 @media screen and (max-width: 480px) {
     .footer__link--items {
