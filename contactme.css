@@ -121,11 +121,11 @@
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
-        background: #fff;
+        background: #131313;
     }
 
     .navbar__menu.active {
-        background: #fff;
+        background: #131313;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -198,7 +198,7 @@
 
 /* Hero Section CSS */
 .main {
-    background-color: #fff;
+    background-color: #F1F1F1;
 }
 
 .main__container {
@@ -208,50 +208,42 @@
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: #fff;
+    background-color: #F1F1F1;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
     padding: 0 50px;
 }
 
+/* Welcome to Riddhi's Space */
 .main__content h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-image: linear-gradient(to top, #86D4D3 0%, #86D4D3 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-}
-
-.main__content h2 {
-    font-size: 4rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .main__content p{
     margin-top: 1rem;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 0;
+    color: #A4A4A4;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .main__btn {
     font-size: 1rem;
-    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-    padding: 14px 32px;
+    background-image: linear-gradient(to top, #86D4D3 0%, #86D4D3 100%);
+    padding: 10px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 50px;
     color: #fff;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     cursor: pointer;
     position: relative;
     transition: all 0.35s;
@@ -263,6 +255,7 @@
     z-index: 2;
     color: #fff;
     text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .main__btn:after {
@@ -272,9 +265,9 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #4837ff;
+    background: #A8E6B5;
     transition: all 0.35s;
-    border-radius: 4px;
+    border-radius: 50px;
 }
 
 .main__btn:hover {
@@ -290,8 +283,58 @@
 }
 
 #main__img {
-    height: 80%;
-    width: 80%;
+    height: 60%;
+    width: 60%;
+}
+
+.scene {
+    padding: 20;
+    margin: 20;
+    width: 75vh;
+}
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .main__container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90vh;
+    }
+
+    .main__content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .main__content h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .main__content p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main__content h1 {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    .main__content p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+    
+    .main__btn {
+        padding: 12px 36px;
+        margin: 2.5rem 0;
+    }
 }
 
 /* Services Section CSS */
@@ -300,19 +343,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-}
-
-.services h1 {
-    background-color: #ff8177;
-    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
-    background-size: 100%;
-    margin-bottom: 5rem;
-    font-size: 2.5rem;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    height: 65vh;
 }
 
 .services__container {
@@ -322,44 +353,83 @@
 }
 
 .services__card {
-    margin: 1rem;
-    height: 525px;
-    width: 400px;
-    border-radius: 4px;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(17, 17, 17, 0.6) 100%), url('/images/pic3.jpg');
+    margin: 2rem;
+    height: 300px;
+    width: 300px;
+    border-radius: 30px;
+    background-image: linear-gradient(to top, #F1F1F1 0%, #F1F1F1 100%);
     background-size: cover;
     position: relative; 
-    color: #fff;
-}
-
-.services__card:nth-child(2) {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(17, 17, 17, 0.6) 100%), url('/images/pic4.jpg'); 
+    color: #60C2C1;
 }
 
 .services h2 {
     position: absolute;
-    top: 350px;
-    left: 30px;
+    top: 80px;
+    left: 28px;
+    font-size: 0.9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .services__card p {
-    position: absolte;
-    top: 400pc;
-    left: 30px;
+    position: absolute;
+    color: #A4A4A4;
+    top: 110px;
+    left: 28px;
+    margin-right: 25px;
+    font-size: 0.85rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.services h4 {
+    position: absolute;
+    top: 200px;
+    left: 28px;
+    font-size: 2rem;
+    color: rgb(216, 215, 215);
+    font-weight: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.services h3 {
+    position: absolute;
+    top: 250px;
+    left: 28px;
+    font-size: 0.8rem;
+    color: #A4A4A4;
+    font-weight: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .services__card button {
     color: #fff;
-    padding: 10px 20px;
+    padding: 20px 20px;
     border: none;
     outline: none;
-    border-radius: 4px;
-    background: #f77062;
+    border-radius: 100px;
+    background: #a4e2e1;
     position: absolute;
-    top: 440px;
+    top: 20px;
     left: 30px;
     font-size: 1rem;
     cursor: pointer;
+}
+
+.services__card button:hover {
+    background: #A8E6B5;
+    transition: all 0.3s ease;
+}
+
+.main__img-container {
+    text-align: center;
+}
+
+#main__img {
+    position: absolute;
+    left: 2px;
+    top: 3px;
+    height: 90%;
+    width: 90%;
 }
 
 .services__card:hover {
@@ -395,69 +465,22 @@
 
 /* Footer CSS */
 .footer__container {
-    background-color: #fff;
-    padding: 5rem 0;
-    display: flex;
+    background-color: #F1F1F1;
+    padding: 2rem 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 #footer__logo {
-    color: #fff;
-    display: flex;
+    color: #60C2C1;
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
-}
-
-.footer__links {
-    width: 100%;
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
-}
-
-.footer__link--wrapper {
-    display: flex;
-}
-
-.footer__link--items {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 16px;
-    text-align: left;
-    width: 160px;
-    box-sizing: border-box;
-}
-
-.footer__link--items h2 {
-    margin-bottom: 16px;
-}
-
-.footer__link--items > h2 {
-    color: #fff;
-}
-
-.footer__link--items a {
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 0.5rem;
-}
-
-.footer__link--items a:hover {
-    color: #e9e9e9;
-    transition: 0.3s ease-out;
+    font-size: 1.8rem;
 }
 
 /* Social Icons */
-.social__icon--link {
-    color: #fff;
-    font-size: 24px;
-}
-
 .social__media {
     max-width: 1000px;
     width: 100%;
@@ -469,30 +492,11 @@
     align-items: center;
     width: 90%;
     max-width: 1000px;
-    margin: 40px auto 0 auto;
+    margin: 10px auto 0 auto;
 }
-
-.social__icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 240px;
-}
-
-.social__logo {
-    color: #fff;
-    justify-self: flex-start;
-    margin-left: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-    margin-bottom: 16px;
-}
-
 .website__rights {
-    color: #fff;
+    color: #A4A4A4;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @media screen and (max-width: 820px) {
