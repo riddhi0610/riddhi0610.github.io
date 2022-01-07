@@ -337,7 +337,7 @@
     .scene {
         position: absolute;
         bottom: -40px;
-        left: -15px;
+        left: -50px;
         padding: 10;
         margin: 10;
         width: 90vh;
@@ -367,6 +367,9 @@
     }
     
     .scene {
+        position: absolute;
+        bottom: -40px;
+        left: -50px;
         padding: 10;
         margin: 10;
         width: 90vh;
