@@ -135,7 +135,8 @@
     }
 
     #navbar__logo {
-        padding-left: 5px;
+        padding-left: 60px;
+        color: #141414;
     }
 
     .navbar__toggle .bar {
