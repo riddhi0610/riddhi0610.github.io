@@ -61,7 +61,7 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    padding: 0 6rem;
+    padding: 0 5rem;
     height: 100%;
 }
 
@@ -70,7 +70,7 @@
     justify-content: center;
     align-items: center;
     padding: 0 3rem;
-    width: 100%;
+    width: 500%;
 }
 
 /* Contact Me Button */
@@ -79,7 +79,7 @@
    justify-content: center;
    align-items: center;
    text-decoration: none;
-   padding: 10px 2pc;
+   padding: 8px 2pc;
    height: 100%;
    width: 100%;
    border: none;

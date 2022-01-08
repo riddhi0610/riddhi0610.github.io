@@ -61,7 +61,7 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    padding: 0 6rem;
+    padding: 0 5rem;
     height: 100%;
 }
 
@@ -70,7 +70,7 @@
     justify-content: center;
     align-items: center;
     padding: 0 3rem;
-    width: 100%;
+    width: 500%;
 }
 
 /* Contact Me Button */
@@ -79,7 +79,7 @@
    justify-content: center;
    align-items: center;
    text-decoration: none;
-   padding: 10px 2pc;
+   padding: 8px 2pc;
    height: 100%;
    width: 100%;
    border: none;
@@ -374,7 +374,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 65vh;
+    height: 125vh;
 }
 
 .services__container {
@@ -405,7 +405,7 @@
 .services__card p {
     position: absolute;
     color: #A4A4A4;
-    top: 110px;
+    top: 105px;
     left: 28px;
     margin-right: 25px;
     font-size: 0.85rem;
@@ -424,7 +424,7 @@
 
 .services h3 {
     position: absolute;
-    top: 250px;
+    top: 255px;
     left: 28px;
     font-size: 0.8rem;
     color: #A4A4A4;
@@ -437,7 +437,7 @@
     padding: 20px 20px;
     border: none;
     outline: none;
-    border-radius: 0px;
+    border-radius: 100px;
     background: #a4e2e1;
     position: absolute;
     top: 20px;
@@ -457,10 +457,10 @@
 
 #main__img {
     position: absolute;
-    left: 4px;
-    top: 4px;
-    height: 80%;
-    width: 80%;
+    left: 2px;
+    top: 2px;
+    height: 90%;
+    width: 90%;
 }
 
 .services__card:hover {
