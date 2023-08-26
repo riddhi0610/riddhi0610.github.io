@@ -1,0 +1,284 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+  :root {
+    --h3-font-size: 1.125rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/*=============== BASE ===============*/
+
+.exper{
+  background: #fff;
+}
+
+.container4{
+  padding: 100px;
+  margin-bottom: -80px;
+  animation: slideTop 1s ease forwards;
+}
+
+.exper-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(259px, 1fr));
+  grid-gap: 40px;
+}
+
+.swiper-container {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== GALLERY ===============*/
+.gallery {
+  height: 80vh;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.gallery__card {
+  position: relative;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.gallery__img, 
+.gallery__card::after,
+.gallery__data {
+  position: absolute;
+}
+
+.gallery__img {
+  inset: 0;
+  margin: auto;
+}
+
+.gallery__data {
+  bottom: 1.5rem;
+  left: 1.75rem;
+  z-index: 10;
+  right: 1.75rem;
+}
+
+.gallery__title {
+  font: bold 1rem 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #60C2C1;
+}
+
+.gallery__subtitle {
+  font: bold 0.8rem 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #A4A4A4;
+}
+
+.gallery__para {
+  font: normal 0.85rem 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #A4A4A4;
+}
+
+.gallery-sci {
+  position: absolute;
+  background: transparent;
+  font-size: 40px;
+  color: #A8E6B5;
+  transition: .5s ease;
+  cursor: pointer;
+  padding-left: 21%;
+  padding-top: 7%;
+}
+
+.gallery-sci:hover{
+  color: #444444;
+}
+
+.gallery__overflow {
+  position: relative;
+}
+
+.gallery__thumbnail {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform .3s;
+  background-color: #f1f1f1;
+}
+
+.gallery__thumbnail-img {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
+/* Swiper class */
+.gallery-cards,
+.gallery-cards1,
+.gallery-cards2,
+.gallery-cards3,
+.gallery-thumbs,
+.gallery-thumbs1,
+.gallery-thumbs2,
+.gallery-thumbs3 {
+  width: 260px;
+}
+
+.gallery-cards:hover .gallery__img {
+  transform: scale(1.1);
+}
+
+.gallery-cards1:hover .gallery__img1 {
+  transform: scale(1.1);
+}
+
+.gallery-cards2:hover .gallery__img1 {
+  transform: scale(1.1);
+}
+
+.gallery-cards3:hover .gallery__img1 {
+  transform: scale(1.1);
+}
+
+.gallery .swiper-wrapper {
+  padding: 3.5rem 0;
+}
+
+.gallery-thumbs,
+.gallery-thumbs1,
+.gallery-thumbs2,
+.gallery-thumbs3 {
+  height: 132px;
+}
+
+/* Active thumbnail */
+.swiper-slide-active .gallery__thumbnail {
+  transform: translateY(-1.25rem) scale(1.2);
+}
+
+/* Rotate thumbnail */
+.swiper-slide-next .gallery__thumbnail {
+  transform: rotate(15deg);
+}
+
+.swiper-slide-prev .gallery__thumbnail {
+  transform: rotate(-15deg);
+}
+
+/* Sliding numbers */
+.swiper-pagination-fraction {
+  font-size: 0.813rem;
+  letter-spacing: -1px;
+  font-weight: 500;
+  color: #A4A4A4;;
+  bottom: 0;
+}
+
+/* Arrow buttons */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: '';
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  font-size: 1.5rem;
+  color: #A4A4A4;
+  top: 6.25rem;
+}
+
+.swiper-button-next {
+  right: -1.5rem;
+  transform: rotate(15deg);
+}
+
+.swiper-button-prev {
+  left: -1.5rem;
+  transform: rotate(-15deg);
+}
+
+/* Other swiper settings */
+.gallery-cards::after,
+.gallery-cards1::after,
+.gallery-cards2::after,
+.gallery-cards3::after  {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.swiper-horizontal.swiper-css-mode > .swiper-wrapper {
+  scroll-snap-type: initial;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .swiper-button-next,
+  .swiper-button-prev{
+    display: none;
+  }
+}
+
+@media(max-width: 1090px){
+  .gallery__card {
+    width: 260px;
+    height: 300px;
+    margin-top: -10%;
+  }
+  .gallery__thumbnail {
+    width: 65px;
+    height: 65px;
+  }
+  .gallery-cards,
+  .gallery-thumbs,
+  .gallery-cards1,
+  .gallery-thumbs1,
+  .gallery-cards2,
+  .gallery-thumbs2,
+  .gallery-cards3,
+  .gallery-thumbs3 {
+    width: 260px;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 1024px) {
+  .gallery__card {
+    width: 260px;
+    height: 300px;
+    margin-top: -10%;
+  }
+  .gallery__thumbnail {
+    width: 65px;
+    height: 65px;
+  }
+  .gallery-cards,
+  .gallery-thumbs,
+  .gallery-cards1,
+  .gallery-thumbs1,
+  .gallery-cards2,
+  .gallery-thumbs2,
+  .gallery-cards3,
+  .gallery-thumbs3 {
+    width: 260px;
+  }
+}
