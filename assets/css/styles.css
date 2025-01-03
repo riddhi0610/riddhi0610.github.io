@@ -244,6 +244,9 @@ img {
     height: 300px;
     margin-top: -10%;
   }
+  .container4{
+    padding: 1000px;
+  }
   .gallery__thumbnail {
     width: 65px;
     height: 65px;
