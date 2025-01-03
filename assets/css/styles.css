@@ -236,9 +236,6 @@ img {
   .swiper-button-prev{
     display: none;
   }
-  .container4{
-    padding: 1000px;
-  }
 }
 
 @media(max-width: 1090px){
@@ -248,7 +245,7 @@ img {
     margin-top: -10%;
   }
   .container4{
-    padding: 1000px;
+    padding: 50px;
   }
   .gallery__thumbnail {
     width: 65px;
